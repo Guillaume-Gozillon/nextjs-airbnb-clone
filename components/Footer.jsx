@@ -3,7 +3,6 @@ function Footer() {
     <footer className='grid grid-cols-1 md:grid-cols-4 gap-y-10 px-32 py-14 bg-gray-100 text-gray-800'>
       <div className='space-y-4 text-xs text-gray-800'>
         <h5 className='font-bold'>Assistance</h5>
-        <p>Centre d'aide</p>
         <p>Informations de sécurité</p>
         <p>Options d'annulation</p>
         <p>Soutenir les personnes en situation de handicap</p>
