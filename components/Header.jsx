@@ -10,7 +10,7 @@ import { useState } from 'react'
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
 import { DateRangePicker } from 'react-date-range'
-import Router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 
 function Header({ placeholder }) {
   const [searchInput, setsearchInput] = useState('')
@@ -19,9 +19,7 @@ function Header({ placeholder }) {
   const [nbOfGuest, setNbOfGuest] = useState(1)
   const router = useRouter()
 
-  const resetInput = () => {
-    setsearchInput('')
-  }
+  const resetInput = () => setsearchInput('')
 
   const search = () => {
     router.push({
