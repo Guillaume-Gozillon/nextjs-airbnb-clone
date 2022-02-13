@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import { format } from 'date-fns'
 import { capitalizeFirstLetter } from '../utils/utils'
 import InfoCard from '../components/InfoCard'
+import MapView from '../components/MapView'
 
 function Search({ searchResult }) {
   const router = useRouter()
@@ -58,6 +59,10 @@ function Search({ searchResult }) {
               )
             )}
           </div>
+        </section>
+
+        <section className='hidden xl:inline-flex xl:min-w-[600px] h-10'>
+          <MapView searchResult={searchResult} />
         </section>
       </main>
 
